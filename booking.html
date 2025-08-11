@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Ticket Booking</h1>
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="booking.html">Book Ticket</a>
+            <a href="profile.html">Profile</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h2>Search Your Ticket</h2>
+        <form action="booking.php" method="POST">
+            <label>From:</label>
+            <select name="from_location">
+                <option value="City A">City A</option>
+                <option value="City B">City B</option>
+            </select>
+
+            <label>To:</label>
+            <select name="to_location">
+                <option value="City C">City C</option>
+                <option value="City D">City D</option>
+            </select>
+
+            <label>Departure Date:</label>
+            <input type="date" name="departure_date" required>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Bus Booking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
